@@ -1,18 +1,32 @@
-## Getting Started
+# Employee Management System (Console)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Java console-based CRUD application to manage employees.
 
-## Folder Structure
+# Features:
+- Add employee
+- View employees
+- Search employee
+- Update employee
+- Delete employee
+- Delete all employees
 
-The workspace contains two folders by default, where:
+# Tech Used:
+- Java
+- OOP
+- Collections (ArrayList)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+  Project Architecture
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+# The project follows a layered architecture to separate responsibilities:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Model Layer - Employee class representing the employee entity.
 
-## Dependency Management
+Repository Layer - Handles data storage and retrieval. Uses ArrayList to simulate a database.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Service Layer - Contains business logic. Interacts with the repository layer.
+
+Main Layer - Handles user interaction and application flow.
+
+This separation improves code readability, maintainability, and scalability, similar to real-world backend applications.
+
+Author: Monica Prajapati
