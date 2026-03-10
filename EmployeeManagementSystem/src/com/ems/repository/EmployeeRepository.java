@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.ems.model.Employee;
 
+//repository is used to interact with the data source, here it is list but in real world it can be database, file, etc
 public class EmployeeRepository {
     //we want  list to store employee data/act as database
     private List<Employee> employees = new ArrayList<>();
@@ -21,11 +22,11 @@ public class EmployeeRepository {
 
     //read one employee data
     public Employee findById(int eid){
-    //using loop to loop throught the emps list
+    //using loop to loop through the emps list
         for(Employee emp: employees){
             //if emp with specified id found
             if(emp.getEid() == eid){
-                return emp; //print it
+                return emp; //if found print employee details
             }
         }
         return null; //else print null
@@ -52,8 +53,6 @@ public class EmployeeRepository {
                 //remove the emp from the emps list
                 employees.remove(emp);
                 return true; //if emp is found & deleted
-            }else{
-                return false;
             }
         }
         return false;

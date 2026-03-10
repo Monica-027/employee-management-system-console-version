@@ -5,6 +5,7 @@ import java.util.List;
 import com.ems.model.Employee;
 import com.ems.repository.EmployeeRepository;
 
+//Service has the business logic, it will call the repo methods to perform the operations
 public class EmployeeService {
 
     //ref var of repo
@@ -32,13 +33,10 @@ public class EmployeeService {
 
         if(emps.isEmpty()){
             System.out.println("No Emp data exists");
-            for (Employee employee : emps) {
-                employee.display();
-            }
         }else{
             System.out.println("----Employee list----");
              for(Employee e : emps){
-                System.out.println(e);
+                e.display();
             }
             System.out.println("----------------");
         } 
@@ -49,10 +47,10 @@ public class EmployeeService {
        Employee emp = repository.findById(eid);
        
        if(emp != null){
-        System.out.println("Employee With "+ eid + " found");
-        System.out.println(emp);
+        System.out.println("Employee With eid: "+ eid + " found");
+        emp.display();
        }else{
-        System.out.println("Employee with id " + eid + " not found.");
+        System.out.println("Employee with eid: " + eid + " not found.");
        }
     }
 
@@ -83,7 +81,7 @@ public class EmployeeService {
             repository.deleteAllEmployees(); //Mistake : didn't call the method from repo here
             System.out.println("All employee deleted");
         }else{
-            System.out.println("Employees not deleted");
+            System.out.println("Employees already deleted");
         }
     }
 

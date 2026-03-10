@@ -47,13 +47,13 @@ public class Employee {
     }
 
     // //overrriden toString()
-    @Override
-    public String toString() {
-        return "Emp [Eid: " + eid + ",Name: " + name + ", Dept: " + dept + ",Salary: " + salary + "]";
-    }
+    // @Override
+    // public String toString() {
+    //     return "Emp [Eid: " + eid + ",Name: " + name + ", Dept: " + dept + ",Salary: " + salary + "]";
+    // }
 
     public void display(){
-        System.out.println("Id: " + eid + ",Name:" + name + ", Dept: " + dept + ",Salary: " + salary);
+        System.out.println("Id: " + eid + " ,Name:" + name + ",Dept: " + dept + " ,Salary: " + salary);
     }
 
 }
