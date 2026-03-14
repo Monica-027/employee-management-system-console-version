@@ -15,9 +15,9 @@ Java console-based CRUD application to manage employees.
 - OOP
 - Collections (ArrayList)
 
-  Project Architecture
+# Project Architecture
 
-# The project follows a layered architecture to separate responsibilities:
+The project follows a layered architecture to separate responsibilities:
 
 Model Layer - Employee class representing the employee entity.
 
