@@ -21,12 +21,12 @@ The project follows a layered architecture to separate responsibilities:
 
 Model Layer - Employee class representing the employee entity.
 
-Repository Layer - Handles data storage and retrieval. Uses ArrayList to simulate a database.
+Repository Layer - Handles data storage and retrieval. Uses ArrayList to store values like a database here.
 
 Service Layer - Contains business logic. Interacts with the repository layer.
 
 Main Layer - Handles user interaction and application flow.
 
-This separation improves code readability, maintainability, and scalability, similar to real-world backend applications.
+This separation improves code readability, maintainability, and scalability.
 
 Author: Monica Prajapati
